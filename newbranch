@@ -1,0 +1,16 @@
+# Definindo a classe Livro
+class Livro:
+    def __init__(self, titulo, autor, ano):
+        self.titulo = titulo
+        self.autor = autor
+        self.ano = ano
+
+    def __str__(self):
+        return f"{self.titulo} por {self.autor} ({self.ano})"
+
+# Função para adicionar um livro à lista
+def adicionar_livro(livros, titulo, autor, ano):
+    livro = Livro(titulo, autor, ano)
+    livros.append(livro)
+    print(f"Livro '{titulo}' adicionado com sucesso!")
+
